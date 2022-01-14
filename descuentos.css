@@ -92,9 +92,9 @@ header h1 {
 }
 
 .container {
-display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
   margin: 0px 32px;
 }
 
@@ -102,15 +102,12 @@ section {
   padding: 24px;
   width: 100%;
   background-color: var(--light);
-  filter: blur(5px) opacity(0.2);
-  transition: all .5s ease;
-}
-section:hover{
-    filter: blur(0px) opacity(1);
+
+  transition: all 0.5s ease;
 }
 section h2 {
-    font-size: 24px;
-    margin-bottom: 16px;
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 section form label {
   display: block;
@@ -144,12 +141,12 @@ section form button:hover {
   background-color: var(--primary-color);
 }
 
-section .outcomePrice{
-    margin-top: 12px;
+section .outcomePrice {
+  margin-top: 12px;
 }
 
-section .outcomePrice span{
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-    padding: 4px 8px;
+section .outcomePrice span {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 4px 8px;
 }

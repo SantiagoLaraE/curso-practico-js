@@ -1,5 +1,3 @@
-// const precioNormal = 120;
-// const descuento = 18;
 
 function calcularPrecioConDescuento(precioNormal, descuento) {
   const porcentajePrecioConDescuento = 100 - descuento;

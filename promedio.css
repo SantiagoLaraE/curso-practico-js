@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #f22929;
+    --secondary-color: #a61c1c;
+    --light-color: #f2a7a7;
+    --light: #f2f2f2;
+    --dark: #0d0d0d;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  nav {
+    padding: 0 32px;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .logo {
+    font-size: 24px;
+    color: var(--dark);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  nav .logo span {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-right: 8px;
+    place-items: center;
+  }
+  nav .logo span div:nth-child(1) {
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+  }
+  nav .logo span div:nth-child(2) {
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 16px solid var(--primary-color);
+    border-left: 10px solid transparent;
+  }
+  nav .logo span div:nth-child(3) {
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+  }
+  
+  nav .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav .menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 8px 16px;
+    margin-left: 12px;
+    border: 1px solid var(--primary-color);
+    font-weight: lighter;
+  }
+  nav .menu li a:hover {
+    background-color: var(--primary-color);
+    color: var(--light);
+  }
+  header {
+    margin: 40px 32px 80px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 8px;
+    color: var(--dark);
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin: 0px 32px;
+  }
+  
